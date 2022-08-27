@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" href="../img/logo.jpg"/>
+    <link rel="icon" type="image/jpg" href="../img/logo2.png"/>
     <link rel="stylesheet" href="../styles/styles.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Camperas</title>
 </head>
-<body>
-    <header>
-        <img src="../img/image 1.png" alt="logo" class="logo" width="85px">
+<body id="grilla">
+    <header id="header">
+        <div class="DivLogo"><img src="../img/logo2.png" alt="logo" class="logo" width="85px"></div>
         <br />
-        <input type="search" placeholder="🔍︎  Buscar..." class="barra">
+        <div class="DivBarra"><input type="search" placeholder="🔍︎  Buscar..." class="barra"></div>
         <nav class="nave"><!--Barra de navegación-->
             <ul>
                 <li><a href="../Index.html">Inicio</a></li>
@@ -23,25 +24,66 @@
                 <li><a href="../Pages/Sucursales.html">Sucursales</a></li>
             </ul>
         </nav>
+        <div class="Divnav">
+            <ul class="nav-tabs">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Menu</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../Index.html">Inicio</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Stock.html">Stock</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="Sucursales.html">Sucursales</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </header>
-    <main class="camperas">
+    <main class="camperas" id="contenido">
         <h1>Camperas:</h1>
-        <span>
-            <h3>Camperas De Hombre Neoprene</h3>
-            <a href="https://articulo.mercadolibre.com.ar/MLA-804157457-camperas-de-hombre-neoprene-oferta-_JM#position=3&search_layout=grid&type=item&tracking_id=1393d507-46f4-4e3f-b20f-cccb195d8afa"><img src="https://http2.mlstatic.com/D_NQ_NP_2X_912694-MLA44565045669_012021-F.webp" width="300" height="270"></a>
-        </span>
-        <span>
-            <h3>Campera Parka Kid Gabardina Niño Con Piel Abrigrada Invierno:</h3>
-            <a href="https://articulo.mercadolibre.com.ar/MLA-910724774-campera-parka-kid-gabardina-nino-con-piel-abrigrada-invierno-_JM?searchVariation=174540007989#searchVariation=174540007989&position=21&search_layout=grid&type=item&tracking_id=9fd304ce-ec72-470e-b490-955363d2c821"><img src="https://http2.mlstatic.com/D_NQ_NP_841957-MLA50022573551_052022-O.webp" alt="campera negra con piel en el cuello" width="300" height="270"></a>
-        </span>
-        <span>
-            <h3>Campera Inflada Hombre Con Capucha - Abrigadas Invierno 19</h3>
-            <a href="https://articulo.mercadolibre.com.ar/MLA-793766035-campera-inflada-hombre-con-capucha-abrigadas-invierno-19-_JM#position=9&search_layout=grid&type=item&tracking_id=d3533bbb-568f-47f6-bf03-9165aecd09c6"><img src="https://http2.mlstatic.com/D_NQ_NP_2X_900402-MLA50623204295_072022-F.webp" width="300" height="270"></a>
-        </span>
+        <div class="row">
+            <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_912694-MLA44565045669_012021-F.webp" class="card-img-top" alt="...">
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>Camperas De Hombre Neoprene Oferta!</b></li>              
+                <li class="list-group-item">Precio: $8.699</li>
+                <li class="list-group-item">Talles Disponibles</li>
+                </ul>
+                <div class="card-body">
+                <a href="https://articulo.mercadolibre.com.ar/MLA-804157457-camperas-de-hombre-neoprene-oferta-_JM#position=3&search_layout=grid&type=item&tracking_id=1393d507-46f4-4e3f-b20f-cccb195d8afa" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+            <br />
+            <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_841957-MLA50022573551_052022-F.webp" class="card-img-top" alt="...">
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>Campera Parka Kid Gabardina Niño Con Piel Abrigrada Invierno</b></li>              
+                <li class="list-group-item">Precio: $8.499</li>
+                <li class="list-group-item">Talles Disponibles</li>
+                </ul>
+                <div class="card-body">
+                <a href="https://articulo.mercadolibre.com.ar/MLA-910724774-campera-parka-kid-gabardina-nino-con-piel-abrigrada-invierno-_JM?searchVariation=174540007989#searchVariation=174540007989&position=21&search_layout=grid&type=item&tracking_id=9fd304ce-ec72-470e-b490-955363d2c821" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+            <br />
+            <div class="card" style="width: 18rem;">
+                <img src="https://http2.mlstatic.com/D_NQ_NP_2X_900402-MLA50623204295_072022-F.webp" class="card-img-top" alt="...">
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>Campera Inflada Hombre Con Capucha - Abrigadas Invierno 19</b></li>              
+                <li class="list-group-item">Precio: $8.500</li>
+                <li class="list-group-item">Talle Único</li>
+                </ul>
+                <div class="card-body">
+                <a href="https://articulo.mercadolibre.com.ar/MLA-793766035-campera-inflada-hombre-con-capucha-abrigadas-invierno-19-_JM#position=9&search_layout=grid&type=item&tracking_id=d3533bbb-568f-47f6-bf03-9165aecd09c6" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer class="footer"><!--Footer-->
-        <a href="../Pages/Contact.html">Contacto</a>
-        <a href="../Pages/Questions.html">Preguntas Frecuentes</a>
+    <footer class="footer" id="footer"><!--Footer-->
+        <div class="footerDiv">
+            <a href="../Pages/Contact.html">Contacto</a>
+            <a href="../Pages/Questions.html">Preguntas Frecuentes</a>
+        </div>
     </footer>
 </body>
 </html>
