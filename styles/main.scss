@@ -1,93 +1,19 @@
-* {
-    margin: 0px;
-    
-}
-
-body {
-    font-family: 'Actor', sans-serif;
-    position: relative;
-    padding-bottom: 13em;
-    min-height: 100vh;
-}
-
-header{
-    background-color: #69D2E7;
-    display: block;
-}
-
-footer {
-    background-color: #A7DBD8;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 10%;
-}
-
-.footerDiv {
-    display: flex;
-    font-size: 30px;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 15px;
-}
-
-.footer a{
-    color: #000;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    color: #FFFFFF;
-}
-
+@import "start";
 .opciones {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    
-}
-
-.opciones li {
-    background-color: #E0E4CC;
-    list-style: none;
-    border-radius: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin: 7px;
-}
-
-.nave  ul {
-    flex-direction: row;
-    display: flex;
-    list-style: none;
-    gap: 30px;
-    justify-content: right;
-    margin-right: 20px;
-    font-size: 30px;
-}
-
-.nave ul li a {
-    color: #000;
-    text-decoration: none;
-}
-
-.nave ul li a:hover {
-    color: #FFFFFF;
-}
-.DivBarra {
-    display: flex;
-    justify-content: center;
-    margin-left: -200px;
-    margin-bottom: -38px;
-}
-.barra{
-    margin-right: -10em;
-    min-width: 600px;
-    min-height:10px;
-    font-size: 20px;
+    li {
+        background-color: $alternative-backgroudcolor;
+        list-style: none;
+        border-radius: 10px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 7px;
+    }
 }
 
 /* .logo {
@@ -100,84 +26,78 @@ footer {
 
 
 /*index*/
-.busqueda h1 {
+.busqueda {
+    h1 {
     display: flex;
     justify-content: center;
     /* position: relative;
     left: 700px;
     margin: 10px; */
+    } 
+    h2 {
+        display: flex;
+        justify-content: center;
+        /* position: relative;
+        left: 640px;
+        margin-bottom: 40px;
+        margin-top: 15px; */
+    }
+    a{
+        color: $a-color;
+        text-decoration: none;
+        :hover {
+            color: $hover-color;
+        }
+    }
 }
 
-.busqueda h2 {
+.contacto {
+    h1 {
     display: flex;
     justify-content: center;
-    /* position: relative;
-    left: 640px;
-    margin-bottom: 40px;
-    margin-top: 15px; */
-}
-
-.busqueda a{
-    color: #000;
-    text-decoration: none;
-}
-
-.busqueda a:hover {
-    color: #FFFFFF;
-}
-
-.contacto h1 {
-    display: flex;
-    justify-content: center;
-}
-
-.contacto form {
-    font-size: 25px;
-}
-
-.contacto input {
-    font-size: 20px;
-    background-color: #E0E4CC;
-}
-
-.contacto select {
-    font-size: 20px;
-    background-color: #E0E4CC;
+    }
+    form {
+        font-size: 25px;
+    }
+    input {
+        font-size: 20px;
+        background-color: $alternative-backgroudcolor;
+    }
+    select {
+        font-size: 20px;
+        background-color: $alternative-backgroudcolor;
+    }
 }
 
 .enviar:hover {
-    color: #FFFFFF;
+    color: $hover-color;
 }
 
-.frecuentes h1 {
+.frecuentes {
+    h1 {
     display: flex;
     justify-content: center;
+    }
+    ul {
+        font-size: 22px;
+    }
+    h3 {
+        display: flex;
+        justify-content: center;
+    }
 }
 
-.frecuentes ul {
-    font-size: 22px;
-}
-
-.frecuentes h3 {
-    display: flex;
-    justify-content: center;
-}
-
-.preguntas input{
+.preguntas {
+    input{
     font-size: 20px;
     margin-left: 10px;
-    background-color: #E0E4CC;
-}
-
-.preguntas textarea {
-    font-size: 20px;
-    margin-left: 10px;
-    background-color: #E0E4CC;
-}
-
-.stock h1 {
-    display: flex;
-    justify-content: center;
+    background-color: $alternative-backgroudcolor;
+    }
+    textarea {
+        font-size: 20px;
+        margin-left: 10px;
+        background-color: $alternative-backgroudcolor;
+    }
 }
 
 /* .stock card {
@@ -199,95 +119,84 @@ footer {
     flex-wrap: wrap;
 } */
 
-.stock{
-    background-color: #e6ebe7;
-    min-height: 100vh;    
+.stock {
+    background-color: $alternative-backgroudcolor;
+    min-height: 100vh; 
+    h1 {
+        display: flex;
+        justify-content: center;
+    }   
 }
 
-.sucursales h1 {
+.sucursales {
+    h1 {
     display: flex;
     justify-content: center;
+    }
+    span {
+        display: inline-block;
+        background-color: $alternative-backgroudcolor;
+        border-style: solid; color: $a-color;
+        list-style: none;
+        border-radius: 10px;
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top: 7px;
+        margin-left: 7px;
+    }
 }
-
-.sucursales span {
-    display: inline-block;
-    background-color: #E0E4CC;
-    border-style: solid; color: #000;
-    list-style: none;
-    border-radius: 10px;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-top: 7px;
-    margin-left: 7px;
-}
-
-.zapatillas h1 {
-    display: flex;
-    justify-content: center;
-}
-
 
 .zapatillas {
-    background-color: #e6ebe7
+    background-color: $alternative-backgroudcolor;
+    h1 {
+    display: flex;
+    justify-content: center;
+    }
 }
 
 .gorras {
-    background-color: #e6ebe7;
-}
-
-.gorras h1 {
-    display: flex;
-    justify-content: center;
-}
-
-.remeras h1 {
-    display: flex;
-    justify-content: center;
+    background-color: $alternative-backgroudcolor;
+    h1 {
+        display: flex;
+        justify-content: center;  
+    }
 }
 
 .remeras {
-    background-color: #e6ebe7;
+    background-color: $alternative-backgroudcolor;
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
 .camisas {
-    background-color: #e6ebe7;
+    background-color: $alternative-backgroudcolor;
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
 }
 
-.camisas h1 {
-    display: flex;
-    justify-content: center;
-}
+
 
 .pantalones {
-    background-color: #e6ebe7;
+    background-color: $alternative-backgroudcolor;
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
 }
-
-.pantalones h1 {
-    display: flex;
-    justify-content: center;
-}
-
 
 .camperas {
-    background-color: #e6ebe7;
-}
-
-.camperas h1 {
-    display: flex;
-    justify-content: center;
-}
-
-.nav-tabs {
-   width: 100px;
-   list-style: none;
-   text-decoration: none;
-}
-
-.nav-tabs:hover {
-    color: #FFFFFF;
+    background-color: $alternative-backgroudcolor;
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 header {
@@ -452,4 +361,3 @@ main {
     margin-top: -60px;
    }
 }
-
