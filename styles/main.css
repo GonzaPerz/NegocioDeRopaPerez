@@ -81,7 +81,6 @@ footer a :hover {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .opciones li {
   background-color: #E0E4CC;
   list-style: none;
@@ -106,7 +105,6 @@ margin-left: 150px; }*/
   left: 700px;
   margin: 10px; */
 }
-
 .busqueda h2 {
   display: flex;
   justify-content: center;
@@ -115,13 +113,11 @@ margin-left: 150px; }*/
   margin-bottom: 40px;
   margin-top: 15px; */
 }
-
 .busqueda a {
   color: #000;
   text-decoration: none;
 }
-
-.busqueda a:hover {
+.busqueda a :hover {
   color: #FFFFFF;
 }
 
@@ -129,16 +125,13 @@ margin-left: 150px; }*/
   display: flex;
   justify-content: center;
 }
-
 .contacto form {
   font-size: 25px;
 }
-
 .contacto input {
   font-size: 20px;
   background-color: #E0E4CC;
 }
-
 .contacto select {
   font-size: 20px;
   background-color: #E0E4CC;
@@ -152,11 +145,9 @@ margin-left: 150px; }*/
   display: flex;
   justify-content: center;
 }
-
 .frecuentes ul {
   font-size: 22px;
 }
-
 .frecuentes h3 {
   display: flex;
   justify-content: center;
@@ -167,16 +158,10 @@ margin-left: 150px; }*/
   margin-left: 10px;
   background-color: #E0E4CC;
 }
-
 .preguntas textarea {
   font-size: 20px;
   margin-left: 10px;
   background-color: #E0E4CC;
-}
-
-.stock h1 {
-  display: flex;
-  justify-content: center;
 }
 
 /* .stock card {
@@ -197,15 +182,18 @@ margin-left: 150px; }*/
     flex-wrap: wrap;
 } */
 .stock {
-  background-color: #e6ebe7;
+  background-color: #E0E4CC;
   min-height: 100vh;
+}
+.stock h1 {
+  display: flex;
+  justify-content: center;
 }
 
 .sucursales h1 {
   display: flex;
   justify-content: center;
 }
-
 .sucursales span {
   display: inline-block;
   background-color: #E0E4CC;
@@ -221,55 +209,49 @@ margin-left: 150px; }*/
   margin-left: 7px;
 }
 
+.zapatillas {
+  background-color: #E0E4CC;
+}
 .zapatillas h1 {
   display: flex;
   justify-content: center;
 }
 
-.zapatillas {
-  background-color: #e6ebe7;
-}
-
 .gorras {
-  background-color: #e6ebe7;
+  background-color: #E0E4CC;
 }
-
 .gorras h1 {
   display: flex;
   justify-content: center;
 }
 
+.remeras {
+  background-color: #E0E4CC;
+}
 .remeras h1 {
   display: flex;
   justify-content: center;
 }
 
-.remeras {
-  background-color: #e6ebe7;
-}
-
 .camisas {
-  background-color: #e6ebe7;
+  background-color: #E0E4CC;
 }
-
 .camisas h1 {
   display: flex;
   justify-content: center;
 }
 
 .pantalones {
-  background-color: #e6ebe7;
+  background-color: #E0E4CC;
 }
-
 .pantalones h1 {
   display: flex;
   justify-content: center;
 }
 
 .camperas {
-  background-color: #e6ebe7;
+  background-color: #E0E4CC;
 }
-
 .camperas h1 {
   display: flex;
   justify-content: center;
