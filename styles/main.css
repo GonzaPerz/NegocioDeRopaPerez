@@ -5,7 +5,7 @@
 body {
   font-family: "Actor", sans-serif;
   position: relative;
-  padding-bottom: 13em;
+  padding-bottom: 7em;
   min-height: 100vh;
 }
 
@@ -76,10 +76,11 @@ footer a :hover {
 }
 
 .opciones {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 155px 155px;
+    justify-content: center;
+    padding-bottom: 50px;
 }
 .opciones li {
   background-color: #E0E4CC;
@@ -98,6 +99,41 @@ footer a :hover {
 /* margin-bottom: -35px;
 margin-left: 150px; }*/
 /*index*/
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(2, 700px);
+  grid-auto-rows: 400px;
+  padding: 20px;
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-item:nth-child(3) {
+  grid-column-start: span 2;
+}
+
+.Divcard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Divcard div{
+  margin: 10px;
+}
+
+.this:hover {
+  animation: fadeIn;
+  animation-duration: 1s;
+}
+
 .busqueda h1 {
   display: flex;
   justify-content: center;
@@ -359,6 +395,21 @@ main {
   .camperas h1 {
     padding-top: 50px;
   }
+  .opciones {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 155px 155px 155px 155px 155px 155px;
+    padding-bottom: 150px;
+  }
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(1, 450px);
+    grid-auto-rows: 400px;
+    padding-top: 50px;
+  }
+  .gallery-item:nth-child(3) {
+    grid-column-start: span 1;
+  }
 }
 /*Tablets modo vertical*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -398,6 +449,16 @@ main {
   .footerDiv {
     font-size: 25px;
   }
+  .opciones {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 155px 155px 155px;
+  }
+  .gallery-container{
+    display: grid;
+    grid-template-columns: repeat(2,360px);
+  }
+  
 }
 @media screen and (min-width: 1200px) {
   .DivLogo {
