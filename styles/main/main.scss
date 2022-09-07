@@ -1,3 +1,4 @@
+@import 'variables';
 @import "start";
 .opciones {
     display: grid;
@@ -17,17 +18,6 @@
     }
 }
 
-
-/* .logo {
-    /* /* position: absolute;
-    left: 150px;*/
-    /* margin-bottom: -35px;
-    margin-left: 150px; }*/
-
-
-
-
-/*index*/
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(2, 700px);
@@ -62,17 +52,10 @@
     h1 {
     display: flex;
     justify-content: center;
-    /* position: relative;
-    left: 700px;
-    margin: 10px; */
     } 
     h2 {
         display: flex;
         justify-content: center;
-        /* position: relative;
-        left: 640px;
-        margin-bottom: 40px;
-        margin-top: 15px; */
     }
     a{
         color: $a-color;
@@ -131,26 +114,6 @@
         background-color: $alternative-backgroudcolor;
     }
 }
-
-/* .stock card {
-    display: inline-block;
-    background-color: #FFFFFF;
-    border-style: solid; color: #000;
-    list-style: none;
-    border-radius: 10px;
-    padding-left: 40px;
-    padding-right: 25px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-top: 7px;
-    margin-left: 7px;
-} */
-
-/* .cartas {
-    display: flex;
-    flex-wrap: wrap;
-} */
-
 .stock {
     background-color: $alternative-backgroudcolor;
     min-height: 100vh; 
@@ -240,7 +203,7 @@ footer {
 main {
     grid-area: contenido
 }
-/*media*/
+
 
 @media screen and (max-width: 480px) and (orientation: portrait){
     #grid {
@@ -351,7 +314,7 @@ main {
         grid-column-start: span 1;
     }
 }
-/*Tablets modo vertical*/
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     #grid {
         display: grid;
