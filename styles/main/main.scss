@@ -1,9 +1,18 @@
 @import 'variables';
-@import "start";
+@import 'start';
+@mixin title {
+    display: flex;
+    justify-content: center;
+}
+$grid: (
+    G-display: grid,
+    G-columns: 300px 300px 300px
+    G-rows: 155px 155px,
+);
 .opciones {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 155px 155px;
+    display: map-get($grid, G-display);
+    grid-template-columns: map-get($grid, G-columns);
+    grid-template-rows: map-get($grid, G-rows);
     justify-content: center;
     padding-bottom: 50px;
     li {
@@ -50,12 +59,10 @@
 }
 .busqueda {
     h1 {
-    display: flex;
-    justify-content: center;
+        @include title;
     } 
     h2 {
-        display: flex;
-        justify-content: center;
+        @include title;
     }
     a{
         color: $a-color;
@@ -68,8 +75,7 @@
 
 .contacto {
     h1 {
-    display: flex;
-    justify-content: center;
+        @include title;
     }
     form {
         font-size: 25px;
@@ -90,15 +96,13 @@
 
 .frecuentes {
     h1 {
-    display: flex;
-    justify-content: center;
+        @include title;
     }
     ul {
         font-size: 22px;
     }
     h3 {
-        display: flex;
-        justify-content: center;
+        @include title;
     }
 }
 
@@ -118,15 +122,13 @@
     background-color: $alternative-backgroudcolor;
     min-height: 100vh; 
     h1 {
-        display: flex;
-        justify-content: center;
+        @include title;
     }   
 }
 
 .sucursales {
     h1 {
-    display: flex;
-    justify-content: center;
+        @include title;
     }
     span {
         display: inline-block;
@@ -146,52 +148,30 @@
 .zapatillas {
     background-color: $alternative-backgroudcolor;
     h1 {
-    display: flex;
-    justify-content: center;
+        @include title;
     }
 }
 
 .gorras {
-    background-color: $alternative-backgroudcolor;
-    h1 {
-        display: flex;
-        justify-content: center;  
-    }
+    @extend .zapatillas;
 }
 
 .remeras {
-    background-color: $alternative-backgroudcolor;
-    h1 {
-        display: flex;
-        justify-content: center;
-    }
+    @extend .zapatillas;
 }
 
 
 .camisas {
-    background-color: $alternative-backgroudcolor;
-    h1 {
-        display: flex;
-        justify-content: center;
-    }
+    @extend .zapatillas;
 }
-
 
 
 .pantalones {
-    background-color: $alternative-backgroudcolor;
-    h1 {
-        display: flex;
-        justify-content: center;
-    }
+    @extend .zapatillas;
 }
 
 .camperas {
-    background-color: $alternative-backgroudcolor;
-    h1 {
-        display: flex;
-        justify-content: center;
-    }
+    @extend .zapatillas;
 }
 
 header {
@@ -259,13 +239,11 @@ main {
         margin-top: 40px;
     }
     .contacto h1 {
-        display: flex;
-        justify-content: center;
+        @include title;
         padding-top: 50px;
     }
     .sucursales h1 {
-        display: flex;
-        justify-content: center;
+        @include title;
         padding-top: 50px;
     }
     .frecuentes h1 {
@@ -275,18 +253,15 @@ main {
         padding-top: 50px;
     }
     .camisas h1 {
-        display: flex;
-        justify-content: center;
+        @include title;
         padding-top: 50px;
     }
     .zapatillas h1 {
-        display: flex;
-        justify-content: center;
+        @include title;
         padding-top: 50px;
     }
     .gorras h1 {
-        display: flex;
-        justify-content: center;
+        @include title;
         padding-top: 50px;
     }
     .remeras h1 {
@@ -337,16 +312,14 @@ main {
         margin-top: -60px;
     }
     .DivBarra {
-        display: flex;
-        justify-content: center;
+        @include title;
         margin-bottom: 20px;
     }
     #header .nav-tabs{
         font-size: 25px;
     }
     .Divnav {
-        display: flex;
-        justify-content: right;
+        @include title;
         margin-top: -80px;
         margin-right: 20px;
     }
