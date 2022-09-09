@@ -6,8 +6,8 @@
 }
 $grid: (
     G-display: grid,
-    G-columns: 300px 300px 300px
-    G-rows: 155px 155px,
+    G-columns: (300px 300px 300px)
+    G-rows: (155px 155px),
 );
 .opciones {
     display: map-get($grid, G-display);
@@ -93,6 +93,7 @@ $grid: (
 .enviar:hover {
     color: $hover-color;
 }
+
 
 .frecuentes {
     h1 {
