@@ -6,7 +6,7 @@
 }
 $grid: (
     G-display: grid,
-    G-columns: (300px 300px 300px)
+    G-columns: (300px 300px 300px),
     G-rows: (155px 155px),
 );
 .opciones {
@@ -14,9 +14,10 @@ $grid: (
     grid-template-columns: map-get($grid, G-columns);
     grid-template-rows: map-get($grid, G-rows);
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
     li {
-        background-color: $alternative-backgroudcolor;
+        background-image: url(../../img/backgroundimage.jpg);
+        box-shadow: 4px 4px 4px 3px #000;
         list-style: none;
         border-radius: 10px;
         padding-left: 100px;
@@ -24,6 +25,14 @@ $grid: (
         padding-top: 50px;
         padding-bottom: 50px;
         margin: 7px;
+        a {
+            color: rgb(0, 238, 255);
+            text-shadow: 2px 2px 2px $a-color;
+            :hover {
+                color: $seconday-color;
+            }
+            
+        }
     }
 }
 
@@ -44,10 +53,23 @@ $grid: (
     }
 }
   
+.carousel-item {
+    h5 {
+        color: #00000085;
+        text-shadow: 1px 1px 1px #fff;
+    }
+    p {
+        color: #fa2e2e;
+        text-shadow: 1px 1px 1px #fff;
+    }
+}
+
 .Divcard {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    filter: drop-shadow(8px 8px 4px #000);
+    text-align: center;
     div{
         margin: 10px;
     }
@@ -74,11 +96,16 @@ $grid: (
 }
 
 .contacto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     h1 {
         @include title;
     }
     form {
         font-size: 25px;
+        list-style: none;
+        filter: drop-shadow(8px 8px 10px $a-color);
     }
     input {
         font-size: 20px;
@@ -101,6 +128,10 @@ $grid: (
     }
     ul {
         font-size: 22px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
     h3 {
         @include title;
@@ -108,6 +139,9 @@ $grid: (
 }
 
 .preguntas {
+    display:block;
+    text-align: center;
+    filter: drop-shadow(4px 4px 4px $a-color);
     input{
     font-size: 20px;
     margin-left: 10px;
@@ -118,9 +152,12 @@ $grid: (
         margin-left: 10px;
         background-color: $alternative-backgroudcolor;
     }
+    .email {
+        min-width: 480px;
+      }
 }
 .stock {
-    background-color: $alternative-backgroudcolor;
+    background-color: $clothes-backgoundcolor;
     min-height: 100vh; 
     h1 {
         @include title;
@@ -143,11 +180,13 @@ $grid: (
         padding-bottom: 50px;
         margin-top: 7px;
         margin-left: 7px;
+        box-shadow: 8px 8px 8px #000;
+        text-align: center;
     }
 }
 
 .zapatillas {
-    background-color: $alternative-backgroudcolor;
+    background-color: $clothes-backgoundcolor;
     h1 {
         @include title;
     }
@@ -185,173 +224,13 @@ main {
     grid-area: contenido
 }
 
-
-@media screen and (max-width: 480px) and (orientation: portrait){
-    #grid {
-        display: grid;
-        grid-template-areas: 
-        "header header header"
-        "contenido contenido cotenido"
-        "footer footer footer";
-    
-    }
-    #header .logo {
-        margin: 0;
-        width: 70px;
-    }
-    #header .barra {
-        margin-right: -10em;
-        min-width: 270px;
-        min-height:10px;
-        position: absolute;
-        left: 90px;
-        top: 20px;
-        font-size: 20px;
-    }
-    #header .nav-tabs{
-        display: flex;
-        font-size: 25px;
-        position: absolute;
-        left: 340px;
-        top: 19px;
-    }
-    #header .nav-link  {
-        width: 90px;
-    }
-    #header .nave ul {
-        display: none;
-    }
-    footer {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 10%;
-    }
-    body {
-        position: relative;
-    }
-    .footerDiv {
-        font-size: 25px;
-    }
-    .busqueda h1 {
-        margin-top: 40px;
-    }
-    .stock h1 {
-        margin-top: 40px;
-    }
-    .contacto h1 {
-        @include title;
-        padding-top: 50px;
-    }
-    .sucursales h1 {
-        @include title;
-        padding-top: 50px;
-    }
-    .frecuentes h1 {
-        padding-top: 50px;
-    }
-    .frecuentes h3 {
-        padding-top: 50px;
-    }
-    .camisas h1 {
-        @include title;
-        padding-top: 50px;
-    }
-    .zapatillas h1 {
-        @include title;
-        padding-top: 50px;
-    }
-    .gorras h1 {
-        @include title;
-        padding-top: 50px;
-    }
-    .remeras h1 {
-        padding-top: 50px;
-    }
-    .pantalones h1 {
-        padding-top: 50px;
-    }
-    .camperas h1 {
-        padding-top: 50px;
-    }
-    .opciones {
-        display: grid;
-        grid-template-columns: 300px;
-        grid-template-rows: 155px 155px 155px 155px 155px 155px;
-        padding-bottom: 150px;
-    }
-      .gallery-container {
-        display: grid;
-        grid-template-columns: repeat(1, 450px);
-        grid-auto-rows: 400px;
-        padding-top: 50px;
-    }
-      .gallery-item:nth-child(3) {
-        grid-column-start: span 1;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    #grid {
-        display: grid;
-        grid-template-areas: 
-        "header header header"
-        "contenido contenido cotenido"
-        "footer footer footer";
-    
-    }
-    
-    #header .nave ul{
-        display: none;
-    }
-    #header .barra {
-        margin-right: -10em;
-        min-width: 500px;
-        min-height:10px;
-        font-size: 20px;
-        margin-bottom: 20px;
-        margin-top: -60px;
-    }
-    .DivBarra {
-        @include title;
-        margin-bottom: 20px;
-    }
-    #header .nav-tabs{
-        font-size: 25px;
-    }
-    .Divnav {
-        @include title;
-        margin-top: -80px;
-        margin-right: 20px;
-    }
-    #header .nav-link  {
-        width: 90px;
-        display: flex;
-    }
-    .footerDiv {
-        font-size: 25px;
-    }
-    .opciones {
-        display: grid;
-        grid-template-columns: 300px 300px;
-        grid-template-rows: 155px 155px 155px;
-      }
-      .gallery-container{
-        display: grid;
-        grid-template-columns: repeat(2,360px);
-      }
-      
-}
- 
-@media screen and (min-width:1200px) {
-   .DivLogo {
+.carousel {
     display: flex;
-    justify-content: flex-start;
-   }
-   .nav-tabs {
-    display: none;
-   }
-   .DivBarra {
-    margin-top: -60px;
-   }
+    width: 90%;
+    padding-bottom: 10px;
+    position: absolute;
+    justify-content: center;
+    margin-left: 3%;
+    filter: drop-shadow(4px 4px 4px #000);
 }
+@import 'mediaqueries';
