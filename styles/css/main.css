@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  background-color: #69D2E7;
+  background-color: #cff5fd;
   display: block;
 }
 
@@ -118,6 +118,10 @@ footer a :hover {
   grid-column-start: span 2;
 }
 
+.Snav {
+  margin-bottom: 10px;
+}
+
 .carousel-item h5 {
   color: rgba(0, 0, 0, 0.5215686275);
   text-shadow: 1px 1px 1px #fff;
@@ -175,11 +179,11 @@ footer a :hover {
 }
 .contacto input {
   font-size: 20px;
-  background-color: #E0E4CC;
+  background-color: #f9f2e4;
 }
 .contacto select {
   font-size: 20px;
-  background-color: #E0E4CC;
+  background-color: #f9f2e4;
 }
 
 .enviar:hover {
@@ -210,12 +214,12 @@ footer a :hover {
 .preguntas input {
   font-size: 20px;
   margin-left: 10px;
-  background-color: #E0E4CC;
+  background-color: #f9f2e4;
 }
 .preguntas textarea {
   font-size: 20px;
   margin-left: 10px;
-  background-color: #E0E4CC;
+  background-color: #f9f2e4;
 }
 .preguntas .email {
   min-width: 480px;
@@ -236,7 +240,7 @@ footer a :hover {
 }
 .sucursales span {
   display: inline-block;
-  background-color: #E0E4CC;
+  background-color: #f9f2e4;
   border-style: solid;
   color: #000;
   list-style: none;
@@ -423,15 +427,13 @@ main {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    display: none;
   }
   #header .nav-tabs {
     font-size: 25px;
   }
-  .Divnav {
-    display: flex;
-    justify-content: end;
-    margin-top: -80px;
-    margin-right: 20px;
+  .DivLogo {
+    display: none;
   }
   #header .nav-link {
     width: 90px;
@@ -468,7 +470,7 @@ main {
     display: flex;
     justify-content: flex-start;
   }
-  .nav-tabs {
+  .Snav {
     display: none;
   }
   .DivBarra {

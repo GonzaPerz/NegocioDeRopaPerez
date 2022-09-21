@@ -145,15 +145,13 @@
     .DivBarra {
         @include title;
         margin-bottom: 20px;
+        display: none;
     }
     #header .nav-tabs{
         font-size: 25px;
     }
-    .Divnav {
-        display: flex;
-        justify-content: end;
-        margin-top: -80px;
-        margin-right: 20px;
+    .DivLogo {
+        display: none;
     }
     #header .nav-link  {
         width: 90px;
@@ -192,7 +190,7 @@
     display: flex;
     justify-content: flex-start;
    }
-   .nav-tabs {
+   .Snav {
     display: none;
    }
    .DivBarra {
