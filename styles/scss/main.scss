@@ -69,8 +69,9 @@ $grid: (
 }
 
 .Divcard {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: 600px;
     justify-content: center;
     filter: drop-shadow(8px 8px 4px #000);
     text-align: center;
@@ -142,23 +143,28 @@ $grid: (
     }
 }
 
-.preguntas {
-    display:block;
-    text-align: center;
-    filter: drop-shadow(4px 4px 4px $a-color);
-    input{
-    font-size: 20px;
-    margin-left: 10px;
-    background-color: $alternative-backgroudcolor;
+.Divquestions {
+    ul {
+        gap: 7px;
     }
-    textarea {
+    .preguntas {
+        display:block;
+        text-align: center;
+        filter: drop-shadow(4px 4px 4px $a-color);
+        input{
         font-size: 20px;
         margin-left: 10px;
         background-color: $alternative-backgroudcolor;
+        }
+        textarea {
+            font-size: 20px;
+            margin-left: 10px;
+            background-color: $alternative-backgroudcolor;
+        }
+        .email {
+            min-width: 480px;
+          }
     }
-    .email {
-        min-width: 480px;
-      }
 }
 .stock {
     background-color: $clothes-backgoundcolor;
@@ -169,6 +175,7 @@ $grid: (
 }
 
 .sucursales {
+    margin-left: 15px;
     h1 {
         @include title;
     }

@@ -40,7 +40,6 @@
         position: absolute;
         bottom: 0;
         width: 100%;
-        height: 10%;
     }
     body {
         position: relative;
@@ -115,7 +114,7 @@
     .Divcard {
         display: flex;
         flex-direction: column;
-        padding-bottom: 200px;
+        padding-left: 15%;
         text-align: center;
       
       }
@@ -130,11 +129,13 @@
         "footer footer footer";
     
     }
-    
-    #header .nave ul{
+    header {
+        width: 100%;
+    }
+    header .nave ul{
         display: none;
     }
-    #header .barra {
+    header .barra {
         margin-right: -10em;
         min-width: 500px;
         min-height:10px;
@@ -147,13 +148,13 @@
         margin-bottom: 20px;
         display: none;
     }
-    #header .nav-tabs{
+    header .nav-tabs{
         font-size: 25px;
     }
     .DivLogo {
         display: none;
     }
-    #header .nav-link  {
+    header .nav-link  {
         width: 90px;
         display: flex;
     }
@@ -165,23 +166,21 @@
         grid-template-columns: 300px 300px;
         grid-template-rows: 155px 155px 155px;
       }
-      .gallery-container{
+    .gallery-container{
         display: grid;
         grid-template-columns: repeat(2,360px);
       }
-      .sucursales span {
+    .sucursales span {
         display: block;
         padding: 10px;
         margin-bottom: 30px;
         margin-top: 0px;
       }
-      .Divcard {
+    .Divcard {
         display: flex;
         flex-wrap: wrap;
         text-align: center;
-        justify-content: center;
-        padding-bottom: 200px;
-      }
+    }
       
 }
  
