@@ -370,6 +370,10 @@ main {
   }
   .sucursales {
     padding-bottom: 50px;
+    padding-right: 10px;
+  }
+  .sucursales iframe {
+    width: 360px;
   }
   .frecuentes h1 {
     padding-top: 50px;
