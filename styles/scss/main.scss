@@ -54,7 +54,7 @@ $grid: (
 }
 
 .Snav {
-    margin-bottom: 10px;
+    margin-bottom: 8%;
 }
 
 .carousel-item {
@@ -71,7 +71,7 @@ $grid: (
 .Divcard {
     display: grid;
     grid-template-columns: repeat(6, 200px);
-    grid-template-rows: 600px;
+    grid-template-rows: auto;
     justify-content: center;
     filter: drop-shadow(8px 8px 4px #000);
     text-align: center;
@@ -157,12 +157,11 @@ $grid: (
         background-color: $alternative-backgroudcolor;
         }
         textarea {
-            font-size: 20px;
             margin-left: 10px;
             background-color: $alternative-backgroudcolor;
         }
         .email {
-            min-width: 480px;
+            min-width: 26%;
           }
     }
 }
@@ -244,4 +243,11 @@ main {
     margin-left: 3%;
     filter: drop-shadow(4px 4px 4px #000);
 }
+
+.respuesta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @import 'mediaqueries';

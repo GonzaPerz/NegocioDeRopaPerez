@@ -122,7 +122,7 @@ footer a :hover {
 }
 
 .Snav {
-  margin-bottom: 10px;
+  margin-bottom: 8%;
 }
 
 .carousel-item h5 {
@@ -137,7 +137,7 @@ footer a :hover {
 .Divcard {
   display: grid;
   grid-template-columns: repeat(6, 200px);
-  grid-template-rows: 600px;
+  grid-template-rows: auto;
   justify-content: center;
   filter: drop-shadow(8px 8px 4px #000);
   text-align: center;
@@ -224,12 +224,11 @@ footer a :hover {
   background-color: #f9f2e4;
 }
 .Divquestions .preguntas textarea {
-  font-size: 20px;
   margin-left: 10px;
   background-color: #f9f2e4;
 }
 .Divquestions .preguntas .email {
-  min-width: 480px;
+  min-width: 26%;
 }
 
 .stock {
@@ -295,6 +294,12 @@ main {
   filter: drop-shadow(4px 4px 4px #000);
 }
 
+.respuesta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 480px) and (orientation: portrait) {
   #grid {
     display: grid;
@@ -303,6 +308,7 @@ main {
   #header .logo {
     margin: 0;
     width: 70px;
+    display: none;
   }
   #header .barra {
     margin-right: -10em;
@@ -312,6 +318,7 @@ main {
     left: 90px;
     top: 20px;
     font-size: 20px;
+    display: none;
   }
   #header .nav-tabs {
     display: flex;
@@ -414,6 +421,9 @@ main {
     flex-direction: column;
     padding-left: 15%;
     text-align: center;
+  }
+  .preguntas textarea {
+    font-size: 15px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
